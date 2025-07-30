@@ -1,0 +1,9 @@
+.createButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 4rem;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
