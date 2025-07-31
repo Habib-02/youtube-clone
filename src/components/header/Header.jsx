@@ -9,10 +9,25 @@ import Notification from "../notification/Notification";
 import User from "../user/User";
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showSearchBox: false,
+    };
+  }
+
+  handleShowSearchBox = () => {
+    this.setState({ showSearchBox: !this.state.showSearchBox });
+  };
+
   render() {
     return (
       <>
-        <div className={styles.headerContainer}>
+        <div
+          className={`${styles.headerContainer} ${
+            this.state.showSearchBox ? styles.showSearch : ""
+          }`}
+        >
           <div className={styles["group-1"]}>
             <Navbar />
             <div className={styles["logo-container"]}>
@@ -20,7 +35,10 @@ class Header extends React.Component {
               <span>MyTube</span>
             </div>
           </div>
-          <SearchBar />
+          <SearchBar
+            showSearchBox={this.state.showSearchBox}
+            handleShowSearchBox={this.handleShowSearchBox}
+          />
           <div className={styles.buttons}>
             <CreateButton />
             <Notification />

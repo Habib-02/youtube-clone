@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 
 .logo-container {
@@ -13,7 +13,9 @@
   align-items: center;
   gap: 0.5rem;
 }
-
+.logo-container span {
+  font-weight: 700;
+}
 .logo {
   font-size: 3rem;
   color: #ff0033;
@@ -23,10 +25,34 @@
   display: flex;
   align-items: center;
   gap: 3rem;
+  flex-shrink: 0;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   gap: 3rem;
+  flex-shrink: 0;
+}
+
+.buttons:first-child {
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .buttons {
+    gap: 1.5rem;
+  }
+  .showSearch .group-1 {
+    display: none;
+  }
+  .showSearch .buttons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .buttons {
+    display: none;
+  }
 }
