@@ -89,12 +89,15 @@
 }
 
 @media screen and (max-width: 472px) {
+  .searchBar {
+    margin: 0;
+  }
   .showSearch .backArrow {
     margin-right: 1rem;
     font-size: 1.6rem;
   }
   .showSearch .search {
-    padding: 0;
+    padding: 0.5rem 0 0.5rem 1rem;
   }
   .showSearch .mic {
     font-size: 1.6rem;
@@ -102,7 +105,7 @@
     margin-left: 01rem;
   }
   .showSearch .search-icon-wrapper {
-    padding: 0.4rem 0.5rem;
+    padding: 0.9rem 0.5rem;
   }
   .showSearch .search-icon {
     font-size: 1.6rem;
