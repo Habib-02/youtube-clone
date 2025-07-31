@@ -56,6 +56,7 @@
   }
   .showSearch.searchBar {
     flex-basis: 100%;
+    margin: 0;
   }
   .search-icon-wrapper {
     background-color: transparent;
@@ -84,5 +85,26 @@
     font-size: 2.5rem;
     margin-right: 5rem;
     flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .showSearch .backArrow {
+    margin-right: 1rem;
+    font-size: 1.6rem;
+  }
+  .showSearch .search {
+    padding: 0;
+  }
+  .showSearch .mic {
+    font-size: 1.6rem;
+    padding: 0;
+    margin-left: 01rem;
+  }
+  .showSearch .search-icon-wrapper {
+    padding: 0.4rem 0.5rem;
+  }
+  .showSearch .search-icon {
+    font-size: 1.6rem;
   }
 }
