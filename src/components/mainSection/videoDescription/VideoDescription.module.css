@@ -1,0 +1,26 @@
+.videoDescription {
+  font-size: 1.4rem;
+  color: #0f0f0f;
+  background-color: #f0f0f0;
+  border-radius: 1.8rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+.time {
+  color: #0f0f0f;
+  font-weight: 600;
+}
+
+.time:first-of-type {
+  margin-right: 0.5rem;
+}
+
+.hashTags {
+  font-weight: 500;
+  color: #606060;
+  margin-left: 1rem;
+}
+
+.videoDescription p:last-of-type {
+  margin: 2rem 0 0;
+}

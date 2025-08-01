@@ -1,0 +1,30 @@
+.mainSection {
+  max-width: 1200px;
+  margin: 6.2rem auto;
+  padding: 2.4rem 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 5rem;
+}
+.videoPlayerWrapper {
+  grid-column: 1 / span 8;
+}
+
+@media screen and (max-width: 992px) {
+  .videoPlayerWrapper {
+    grid-column: 2 / span 10;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .videoPlayerWrapper {
+    grid-column: 1 / span 12;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainSection {
+    display: block;
+  }
+}

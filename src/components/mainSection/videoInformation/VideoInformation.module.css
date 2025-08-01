@@ -1,0 +1,156 @@
+.videoTitle {
+  font-size: 2rem;
+  margin: 1.2rem 0;
+}
+
+.channelMetaData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.channelInfo {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.group1 {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.channelAvatar {
+  width: 40px;
+  height: 40px;
+}
+
+.channelAvatar img {
+  border-radius: 50%;
+}
+
+.channelName h5 {
+  color: #0f0f0f;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.channelName p {
+  color: #606060;
+  font-size: 1.2rem;
+}
+
+.subButton {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 1.8rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.8rem 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn .btnLogo {
+  font-size: 2rem;
+}
+
+.likeDislikeButton {
+  display: flex;
+}
+
+.likeButton::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 2rem;
+  background-color: #606060;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.likeButton {
+  position: relative;
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.dislikeButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.moreButtons .btn {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .downloadButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .videoTitle {
+    font-size: 1.6rem;
+  }
+
+  .shareButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .channelMetaData {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .downloadButton {
+    display: block;
+  }
+  .shareButton {
+    display: block;
+  }
+
+  .buttons .btn {
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .moreButtons .btn {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .downloadButton {
+    display: none;
+  }
+}

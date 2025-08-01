@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./Header.module.css";
-import Navbar from "../navigation/Navbar";
 
 import { IoLogoYoutube } from "react-icons/io";
+
+import Navbar from "../navigation/Navbar";
 import SearchBar from "../searchBar/SearchBar";
 import CreateButton from "../createButton/CreateButton";
 import Notification from "../notification/Notification";
@@ -23,7 +24,7 @@ class Header extends React.Component {
   render() {
     return (
       <>
-        <div
+        <header
           className={`${styles.headerContainer} ${
             this.state.showSearchBox ? styles.showSearch : ""
           }`}
@@ -44,7 +45,7 @@ class Header extends React.Component {
             <Notification />
             <User />
           </div>
-        </div>
+        </header>
       </>
     );
   }
