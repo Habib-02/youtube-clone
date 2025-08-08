@@ -1,0 +1,53 @@
+import { Component } from "react";
+import styles from "./Header.module.css";
+
+import { IoLogoYoutube } from "react-icons/io";
+
+import Navbar from "./Navbar";
+import SearchBar from "./SearchBar";
+import CreateButton from "./CreateButton";
+import Notification from "./Notificatoin";
+import User from "./User";
+
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showSearchBox: false,
+    };
+  }
+
+  handleShowSearchBox = () => {
+    this.setState({ showSearchBox: !this.state.showSearchBox });
+  };
+
+  render() {
+    return (
+      <>
+        <header
+          className={`${styles.headerContainer} ${
+            this.state.showSearchBox ? styles.showSearch : ""
+          }`}
+        >
+          <div className={styles["group-1"]}>
+            <Navbar />
+            <div className={styles["logo-container"]}>
+              <IoLogoYoutube className={styles.logo} />
+              <span>MyTube</span>
+            </div>
+          </div>
+          <SearchBar
+            showSearchBox={this.state.showSearchBox}
+            handleShowSearchBox={this.handleShowSearchBox}
+          />
+          <div className={styles.buttons}>
+            <CreateButton />
+            <Notification />
+            <User />
+          </div>
+        </header>
+      </>
+    );
+  }
+}
+export default Header;

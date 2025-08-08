@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./components/header/Header/Header";
-import Main from "./components/mainSection/main/Main";
+import Header from "./layout/Header";
+import Main from "./features/Main";
 
 class App extends React.Component {
   render() {
@@ -8,7 +8,6 @@ class App extends React.Component {
       <>
         <Header />
         <Main />
-        <footer></footer>
       </>
     );
   }
